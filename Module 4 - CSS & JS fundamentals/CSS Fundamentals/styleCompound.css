@@ -1,0 +1,67 @@
+/*
+Cssfontstack.com
+*/
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    color: #FFE600;
+}
+
+header,
+section {
+    padding: 50px;
+}
+
+header {
+    background-color: #FFE600;
+    color: #000;
+}
+
+.section-one {
+    background-color: #000;
+    color: white;
+}
+
+.section-two-link {
+    color: #000;
+}
+
+/* Button styling 
+Dont repeat yourself
+Use generic btn class for multiple buttons and additional class to specify button
+*/
+.btn {
+    padding: 15px 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.btn-accent {
+    background-color: #FFE600;
+    color: #000;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #FFE600;
+}

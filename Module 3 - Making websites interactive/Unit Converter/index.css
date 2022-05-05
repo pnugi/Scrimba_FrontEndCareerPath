@@ -1,0 +1,48 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#top {
+    text-shadow: 1px;
+    color: whitesmoke;
+    position: absolute;
+    width: 550px;
+    height: 190px;
+    left: 20px;
+    top: 20px;
+
+    background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+}
+
+#num {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#bottom {
+    position: absolute;
+    width: 550px;
+    height: 340px;
+    left: 20px;
+    top: 210px;
+    background: #1F2937;
+}
+
+#bottom {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#bottom p {
+    margin-top: 30px;
+}
+
+#lengthNums,
+#volumeNums,
+#massNums {
+    font-weight: normal;
+}

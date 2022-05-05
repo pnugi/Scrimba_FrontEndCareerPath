@@ -1,0 +1,54 @@
+.card {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+
+    max-width: 500px;
+}
+
+.content {
+    background-color: #f1f1f1;
+    width: 450px;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #2E7AD3;
+    text-align: center;
+    margin: 45px auto;
+}
+
+h2 {
+    font-size: 32px;
+    color: #104C90;
+    margin: 0 auto 15px auto;
+}
+
+img {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+p {
+    font-size: 16px;
+    margin: 0 auto 9px auto;
+}
+
+a:link,
+a:visited {
+    color: #ff8000;
+    font-weight: bold;
+}
+
+a:hover,
+a:focus {
+    color: #ffbb00;
+}
+
+a:active {
+    color: #104C90;
+}

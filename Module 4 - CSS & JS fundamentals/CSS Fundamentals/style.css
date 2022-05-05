@@ -1,0 +1,71 @@
+/*
+Notes:
+ - Specifity (order of selection) ID > Class > Element
+*/
+
+.card {
+    background: #000;
+    color: white;
+    width: 560px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h1,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.accent-color {
+    color: yellow;
+}
+
+p {
+    font-size: 18px;
+}
+
+.links {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+/*
+ - Style buttons with padding, not with width+height
+ - Look for button examples from internet
+*/
+.button {
+    background-color: yellow;
+    color: black;
+    padding: 15px 30px;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 0, 0.521);
+}
+
+/* 
+Order of these matter, css chooses the last one!
+Remember to include hover and focus for links
+
+a:link,
+a:visited {
+    color: yellow;
+}
+
+a:hover,
+a:focus {
+    color: rgb(255, 217, 0);
+}
+
+
+a:active {
+    color: plum;
+}
+*/

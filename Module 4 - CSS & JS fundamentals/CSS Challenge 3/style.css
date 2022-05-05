@@ -1,0 +1,105 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+}
+
+.container {
+    width: 570px;
+    margin: 0 auto;
+}
+
+/* Dark themed container */
+.inverse {
+    background-color: #000;
+    color: #fff;
+}
+
+header,
+footer {
+    padding: 100px 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 20px 0;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+
+p {
+    margin-bottom: 0;
+}
+
+.small-text {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* display block creates new line like <br> */
+.bold-text {
+    font-weight: 900;
+    color: #99d930;
+    display: block;
+}
+
+p .bold-text {
+    display: contents;
+}
+
+h1 .bold-text {
+    font-size: 80px;
+}
+
+h2 .bold-text {
+    font-size: 60px;
+}
+
+/* Links */
+.link-color:link,
+.link-color:visited {
+    color: #99d930;
+}
+
+.link-color:hover {
+    color: #131313;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    background-color: #99d930;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-decoration: none;
+    font-weight: 900;
+    color: #252525;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #252525;
+    color: #fff;
+}

@@ -1,0 +1,90 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: #2e354f;
+    font-size: 18px;
+}
+
+h1 {
+    color: #fff;
+    padding: 30px 0;
+    font-size: 36px;
+}
+
+h2 {
+    color: #ef5839;
+    font-size: 24px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+/* Centers content to be 620px witdh in the middle */
+.container {
+    width: 620px;
+    margin: 0 auto;
+}
+
+.section-light {
+    color: black;
+    background-color: #fff;
+}
+
+.section-dark {
+    color: #fff;
+}
+
+/* Links */
+.section-one-link:link,
+.section-two-link:link,
+.section-one-link:visited,
+.section-two-link:visited {
+    color: #ef5839;
+}
+
+.section-one-link:hover,
+.section-two-link:hover {
+    color: rgb(117, 32, 1);
+}
+
+.section-one-link:focus,
+.section-two-link:focus {
+    color: #2e354f;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 900;
+    text-decoration: none;
+    margin: 5px 15px 0 0;
+    font-size: smaller;
+}
+
+.btn-contact {
+    background-color: #ef5839;
+    color: #fff;
+}
+
+.btn-info {
+    background-color: #fff;
+    color: black;
+}
+
+.btn-contact:hover {
+    background-color: #f33712;
+}
+
+.btn-info:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.btn-contact:focus {
+    background-color: #943421;
+}
+
+.btn-info:focus {
+    background-color: rgb(150, 150, 150);
+}
