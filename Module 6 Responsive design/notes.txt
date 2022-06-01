@@ -1,0 +1,61 @@
+CSS units:
+
+Absolute: Pixels (px)
+Procentage: Mostly used with width
+
+width: 90% 
+max-width: 620px 
+makes container work on mobile with 90% width, but it caps container on bigger screens to 620px
+---------
+
+Relative units, relative to fontsize or to the viewport
+
+Font size: em and rem
+- em are relative to their parent's font-size
+(matching parent font-size with 1em, doubles with 2em, etc.)
+- There is some problems with em, example cascading effect
+
+- rem (root em), root of an html page is the html element
+
+Instructor rule of thumb:
+Font-size = rem
+padding and margin = em
+width = em or %
+----------
+
+Viewport: vw, vh, vmin, vmax
+
+----------
+
+Mediaqueries
+
+- Order matters
+
+Basic syntax
+@media () {...}
+
+body {
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    background: pink;
+}
+
+/* from a minimum width of 650px and bigger */
+@media (min-width: 500px) {
+    body {
+        background: orange;
+    }
+}
+
+/* from a minimum width of 400px up to a width of 649px */
+@media (min-width: 400px) and (max-width: 649px) {
+    body {
+        background: purple;
+    }
+}
+
+- Mediaqueries can be after specific class or end of CSS
+
+-Use border to see container boxes easier !!
+border: 1px solid magenta; for example

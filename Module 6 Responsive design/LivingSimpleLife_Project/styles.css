@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+/* These are super useful to have globally for images */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.image-full {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
+/* =================
+    Typography
+    Remember DRY code
+    ================= */
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h3 {
+    color: #1792d2;
+}
+
+a {
+    color: #1792d2;
+    font-weight: bold;
+}
+
+a:hover,
+a:focus {
+    color: #143774;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.sub-title {
+    color: #1792d2;
+    font-weight: 700;
+    font-size: .75rem;
+    margin: 0;
+}
+
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-info,
+.article-read-more,
+.widget-title,
+.widget-recent-post-title,
+.article-body {
+    font-size: 0.875rem;
+}
+
+.article-read-more {
+    color: #1792d2;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+
+.article-info {
+    margin: 2em 0;
+}
+
+.article-body {
+    line-height: 1.6;
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+
+.article-link {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.widget-title {
+    color: #143774;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 3px;
+}
+
+.widget-body {
+    font-size: .875rem;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.widget-recent-post-title {
+    color: #143774;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: .7rem;
+}
+
+/* =================
+    Layout
+    ================ */
+
+header {
+    background-color: #f8f8f8;
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/* Default container for multiple elements */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* flex container for multiple elements, where it is needed */
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 675px) {
+    .container-flex {
+        flex-direction: row;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    aside {
+        width: 25%;
+    }
+}
+
+footer {
+    background-color: #143774;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
+}
+
+/* =================
+    Navigation
+    ================ */
+
+nav {
+    font-size: 1rem;
+    color: #707070;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    /* Adding margin-left to make nav bar better looking */
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 400;
+    /* Added padding for mobile use */
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 2px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+
+    }
+
+    /* Removing left margin at 800px screen*/
+    nav li {
+        margin: .5em 0;
+    }
+}
+
+/*  ================
+    Articles 
+    ================*/
+
+.article-featured {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+/* Image/text reordering on articles */
+.article-recent-main {
+    order: 2;
+
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+/* Mediaquery for bigger screen */
+@media (min-width: 675px) {
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main {
+        width: 67%;
+    }
+
+    .article-recent-secondary {
+        width: 30%;
+    }
+
+    /* Changing order of featured content */
+    .article-featured {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-image {
+        order: -2;
+    }
+
+    .article-info {
+        order: -1
+    }
+
+    /* Cropping image. Super useful for re-purposing images */
+    .article-image {
+        width: 100%;
+        min-height: 250px;
+        object-fit: cover;
+    }
+
+    /* Cropping image from the left side */
+    .article-image-3 {
+        object-position: left;
+    }
+}
+
+/* ===========
+    Widgets
+   =========== */
+
+.sidebar-widget {
+    border: rgb(229, 228, 228) 15px solid;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.widget-recent-post {
+    border-bottom: 1px solid #707070;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Useful pseudo-class for last element. No need to add classes */
+.widget-recent-post:last-child {
+    border: none;
+    margin-bottom: -.5em;
+}
+
+.widget-recent-post-title {
+    padding-top: 1em;
+    order: -1;
+}
+
+.widget-image {
+    order: -2;
+}
+
+/* ===========
+    About me
+   =========== */
+footer {
+    width: ;
+}
