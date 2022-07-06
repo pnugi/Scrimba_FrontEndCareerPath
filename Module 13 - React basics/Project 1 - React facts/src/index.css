@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Inter, sans-serif;
+  margin: 0;
+}
+li {
+  margin-bottom: 12px;
+}
+::marker {
+  font-size: 1.3em;
+}
