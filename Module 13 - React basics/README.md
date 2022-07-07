@@ -7,6 +7,8 @@ https://scrimba.com/learn/frontend
 
 # Made locally with Create React App and TailwindCSS
 
-# 1
+# Learning projects
 - React facts site
+
+# Solo projects
 - Digital business card
