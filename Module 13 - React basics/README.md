@@ -5,8 +5,8 @@ https://scrimba.com/learn/frontend
 
 # Module 13 - React basics
 
-# Made locally with Create React App and TailwindCSS
+Made locally with Create React App and TailwindCSS
 
-# 1
+Part 1
 - React facts site
 - Digital business card
