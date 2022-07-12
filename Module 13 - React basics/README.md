@@ -10,8 +10,10 @@ Made locally with Create React App and TailwindCSS
 
 # Learning projects
 
-- React facts site
+- 1. React facts site (React basics, JSX, custom components. Static page)
+- 2. Airbnb clone (props, mapping data)
 
 # Solo projects
 
-- Digital business card
+- 1. Digital business card (React basics, JSX, custom components. Static page)
+- 2. My travel journal (props, mapping data)
