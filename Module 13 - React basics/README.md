@@ -11,7 +11,8 @@ Made locally with Create React App and TailwindCSS
 # Learning projects
 
 - 1. React facts site (React basics, JSX, custom components. Static page)
-- 2. Airbnb clone (props, mapping data)
+- 2. Airbnb clone (Props, mapping data)
+- 3. Meme generator (Event listeners, state, conditional rendering, forms, side effects)
 
 # Solo projects
 
