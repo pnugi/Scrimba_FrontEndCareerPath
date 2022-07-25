@@ -10,11 +10,12 @@ Made locally with Create React App and TailwindCSS
 
 # Learning projects
 
-- 1. React facts site (React basics, JSX, custom components. Static page)
-- 2. Airbnb clone (Props, mapping data)
-- 3. Meme generator (Event listeners, state, conditional rendering, forms, side effects)
+-  React facts site (React basics, JSX, custom components. Static page)
+-  Airbnb clone (Props, mapping data)
+-  Meme generator (Event listeners, state, conditional rendering, forms, side effects)
+-  Notes app. Features: Sync notes to local storage, refresh note title and freshest note to top of list and feature to be able delete notes 
 
 # Solo projects
 
-- 1. Digital business card (React basics, JSX, custom components. Static page)
-- 2. My travel journal (props, mapping data)
+-  Digital business card (React basics, JSX, custom components. Static page)
+-  My travel journal (props, mapping data)
