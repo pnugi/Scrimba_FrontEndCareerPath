@@ -10,5 +10,6 @@ Module 5 - JS fundamentals
 
 # Doing: <br>
 Module 6 - Responsive design 	50% done<br>
+Module 7 - Next level JS
 Module 13 - React basics
 
