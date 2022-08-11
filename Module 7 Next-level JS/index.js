@@ -1,23 +1,25 @@
 // 1. Characters
 import characterData from "./data.js";
-// 3. Function to render characters
+// 3. Class to render characters
 import Character from "./Character.js";
 
+// Monsters array with names to check game state
 let monstersArray = ["orc", "demon", "goblin"];
 
 function getNewMonster() {
   // Extract first monstername from monstersArray and get that monster from characterData
   const nextMonsterData = characterData[monstersArray.shift()];
 
+  // If monsters array is not empty, return new monster from array, else return empty object
   if (monstersArray != []) {
     return new Character(nextMonsterData);
   } else {
     return {};
   }
-  //return nextMonsterData ? new Character(nextMonsterData) : {};
+  // return nextMonsterData ? new Character(nextMonsterData) : {};
 }
 
-// 2. Function to render character to HTML. Creating new character and passing information
+// 2. Function to render character to HTML. Creating new character and monster
 const wizard = new Character(characterData.hero);
 let monster = getNewMonster();
 
@@ -30,6 +32,7 @@ render();
 
 document.getElementById("attack-button").addEventListener("click", attack);
 
+// Attack function for setting dices, setting damage scores and checking game status
 function attack() {
   wizard.setDiceHtml();
   monster.setDiceHtml();
@@ -37,14 +40,13 @@ function attack() {
   monster.takeDamage(wizard.currentDiceScore);
   render();
 
-  // Checking game status
+  // Conditional logic to check game status
   if (wizard.dead) {
     setTimeout(() => endGame(), 1500);
   } else if (monster.dead) {
     document.getElementById("attack-button").style.visibility = "hidden";
     if (monstersArray.length > 0) {
-      // Getting new monster to appear if last one is dead
-
+      // Getting new monster to appear if last one is dead w/ delay
       setTimeout(() => {
         monster = getNewMonster();
         render();
@@ -56,6 +58,7 @@ function attack() {
   }
 }
 
+// Ending game
 function endGame() {
   // Rendering win message if game is over
   const endMessage =
@@ -75,12 +78,3 @@ function endGame() {
       <p class="end-emoji">${endEmoji}</p>
     </div>`;
 }
-
-// Dicerolls array with for loop
-/*   
-  const newDiceRolls = []
-  for (let i = 0; i < dices; i++) {
-    let diceroll = Math.floor(Math.random() * 6 + 1);
-    newDiceRolls.push(diceroll);
-  } 
-*/
