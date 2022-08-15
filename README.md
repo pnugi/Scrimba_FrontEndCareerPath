@@ -6,10 +6,10 @@ https://scrimba.com/learn/frontend
 # Completed: <br>
 Module 3 - Making websites interactive (29/04/2022)<br>
 Module 4 - CSS fundamentals <br>
-Module 5 - JS fundamentals 
+Module 5 - JS fundamentals <br>
+Module 7 - Next level JS <br>
 
 # Doing: <br>
 Module 6 - Responsive design 	50% done<br>
-Module 7 - Next level JS <br>
-Module 13 - React basics (90% done, last project missing)
+Module 13 - React basics (90% done, last project WIP)
 

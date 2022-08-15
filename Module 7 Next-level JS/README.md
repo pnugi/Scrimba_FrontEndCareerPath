@@ -2,7 +2,7 @@
 
 https://scrimba.com/learn/frontend
 
-## Started 01/08/2022
+## Started 01/08/2022 - Done 15/08/2022
 
 ## Module 7 - Next-level Javascript
 
@@ -17,4 +17,4 @@ https://scrimba.com/learn/frontend
 
 ### Solo projects
 
-- Tindog (Tinder for dogs:D)
+- Tindog (Tinder for dogs:D). Array methods, Class
